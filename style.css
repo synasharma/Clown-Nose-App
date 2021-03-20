@@ -1,0 +1,38 @@
+body
+{
+background-image:url('background.jpg');
+text-align:center;
+font-family: monospace;
+}
+
+h1
+{
+font-size:40px;
+}
+
+.ss
+{
+background-image:linear-gradient(lightblue ,pink ,yellow );
+font-size :30px;
+animation:eg2 10s infinite;
+}
+
+canvas
+{
+border:2px solid black;
+animation:eg 5s infinite;
+}
+
+@keyframes eg 
+{
+    0%{box-shadow:5px 5px 5px yellow;}
+    50%{box-shadow: 5px 5px 5px pink;}
+    100%{box-shadow: -5px -5px 5px lightblue ;}
+}
+
+@keyframes eg2
+{
+    0%{background-image:linear-gradient(lightblue ,pink ,yellow );}
+    50%{background-image:linear-gradient(white , rgb(203, 125, 248) ,#f8ab6d );}
+    100%{background-image:linear-gradient(rgb(119, 151, 161) ,rgb(250, 103, 171) ,rgb(222, 243, 153) );}
+}
